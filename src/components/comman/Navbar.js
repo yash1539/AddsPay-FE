@@ -11,7 +11,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-
+import NavBanner from './NavBanner'
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
   { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
@@ -32,6 +32,8 @@ const Navbar = ()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
+    <>
+    <NavBanner/>
     <header className="bg-white ">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
@@ -228,6 +230,7 @@ const Navbar = ()=> {
         </Dialog.Panel>
       </Dialog>
     </header>
+    </>
   )
 }
 
