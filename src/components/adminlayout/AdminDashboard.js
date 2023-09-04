@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const AdminDashboard = () => {
 
    const [sidenav , setSidenav] =useState(true)
+   console.log(sidenav);
   return (
 
     <body className="font-poppins antialiased">
