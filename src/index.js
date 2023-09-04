@@ -3,11 +3,58 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
+import ContactUs from "./components/pages/ContactUs";
+import AboutUs from "./components/pages/AboutUs";
+import ListingPage from "./components/listing/ListingPage";
+import AdminDashboard from "./components/adminlayout/AdminDashboard";
+import PageNotFound from "./components/pages/PageNotFound";
+import Login from "./components/comman/Login";
+import Home from './components/pages/Home';
+import PricingPlan from './components/pages/PricingPlan';
+const appRouter = createBrowserRouter([
+  {
+    path: "/", 
+    element: <App />,
+    errorElement: <PageNotFound />, 
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+     
+      {
+        path: "about",
+        element: <AboutUs />,
 
+      },
+      {
+        path: "contact",
+        element: <ContactUs />,
+      },
+      {
+        path: "pricing",
+        element: <PricingPlan />,
+      },
+      {
+        path: "Listing/:listId",
+        element: <ListingPage />,
+      },
+    ],
+  },
+  {
+    path: "/Admin",
+    element: <AdminDashboard />,
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={appRouter} />
   </React.StrictMode>
 );
 
