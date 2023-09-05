@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "./components/comman/Footer";
 // import "./App.css";
 import Navbar from "./components/comman/Navbar";
-import {  Outlet } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
+import { Outlet } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Navbar />
@@ -12,6 +12,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

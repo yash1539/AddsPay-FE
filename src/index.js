@@ -4,7 +4,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
 import ContactUs from "./components/pages/ContactUs";
-import App from './App';
 import AboutUs from "./components/pages/AboutUs";
 import ListingPage from "./components/listing/ListingPage";
 import AdminDashboard from "./components/adminlayout/AdminDashboard";
@@ -13,6 +12,7 @@ import Login from "./components/comman/Login";
 import Home from './components/pages/Home';
 import PricingPlan from './components/pages/PricingPlan';
 import ContactForm from './components/comman/ContactForm';
+import App from './App';
 const appRouter = createBrowserRouter([
   {
     path: "/", 
