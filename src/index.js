@@ -1,13 +1,75 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested routing
+import ContactUs from "./components/pages/ContactUs";
+import AboutUs from "./components/pages/AboutUs";
+import ListingPage from "./components/listing/ListingPage";
+import AdminDashboard from "./components/adminlayout/AdminDashboard";
+import PageNotFound from "./components/pages/PageNotFound";
+import Login from "./components/comman/Login";
+import Home from './components/pages/Home';
+import PricingPlan from './components/pages/PricingPlan';
+import ContactForm from './components/comman/ContactForm';
+import App from './App';
+const appRouter = createBrowserRouter([
+  {
+    path: "/", 
+    element: <App />,
+    errorElement: <PageNotFound />, 
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+     
+      {
+        path: "about",
+        element: <AboutUs />,
 
+      },
+      {
+        path: "contact",
+        element: <ContactUs />,
+      },
+      {
+        path: "contact-form",
+        element: <ContactForm />,
+      },
+      {
+        path: "pricing",
+        element: <PricingPlan />,
+      },
+      {
+        path: "listing",
+        element: <ListingPage />,
+      },
+    ],
+  },
+  {
+    path: "/Admin",
+    element: <AdminDashboard />,
+    children:[
+      {
+        path: "contact-form",
+        element: <ContactForm />,
+      },
+    ]
+  },
+  {
+    path: "contact-form",
+    element: <ContactForm />,
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={appRouter} />
   </React.StrictMode>
 );
 

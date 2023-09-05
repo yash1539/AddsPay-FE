@@ -1,19 +1,35 @@
 import React from 'react'
 
-const CategoryCard = () => {
+const CategoryCard = ({name,img}) => {
+    console.log(name , img)
   return (
-    <div
-    className="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-    <h5
-      className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-      Card title
-    </h5>
-    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-      Some quick example text to build on the card title and make up the
-      bulk of the card's content.
-    </p>
-   
-  </div>  )
+    <>
+    <div className="group relative rounded-lg overflow-hidden shadow-xl   hover:scale-105 transition duration-500 cursor-pointer ">
+        <div className="h-100">
+          <img
+          
+            src={img}
+            alt="City"
+            className="max-h-75 min-h-75 w-full  "
+          />
+        </div>
+        <div className=" h-1/4 p-2 ">
+          <p className="mb-1 text-xl font-semibold text-center text-bold text-blue-600">
+            <a href="/#" className="">
+             {name}
+            </a>
+          </p>
+          {/* <p className="text-sm font-bold text-orange-500">perspiciatis</p> */}
+          {/* <div className="flex flex-row justify-between text-xs mt-2">
+            <p>perspiciatis</p>
+            <p>Sed ut perspiciatis unde omnis iste</p>
+          </div> */}
+        </div>
+      </div>
+    </>
+  
+ 
+    )
 }
 
 export default CategoryCard
