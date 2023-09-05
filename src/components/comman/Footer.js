@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
-export default function App() {
+const Footer = ()=> {
   return (
     <footer className="bg-neutral-100 text-center dark:bg-neutral-600 lg:text-left">
-      <div className="container p-6 text-neutral-800 dark:text-neutral-200">
+      <div className="container p-6 m-auto text-neutral-800 dark:text-neutral-200">
         <div className="grid gap-10 lg:grid-cols-3 mx-12">
           <div className="mx-4 md:mb-0 col-end-2">
             <h5 className="mb-2 font-medium uppercase">About Us</h5>
@@ -19,28 +20,25 @@ export default function App() {
             <div className="">
            
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Home</a>
+              <Link to="/" className="text-neutral-600 dark:text-neutral-200"
+              >Home</Link>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Listing Categories</a>
+              <Link to="/listing" className="text-neutral-600 dark:text-neutral-200"
+              >Listing Categories</Link>
             </p>
-            {/* <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Blogs</a>
-            </p> */}
+          
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Pricing Plan</a>
+              <Link to="/pricing" className="text-neutral-600 dark:text-neutral-200"
+              >Pricing Plan</Link>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Terms and Conditions</a>
+              <Link to="/about" className="text-neutral-600 dark:text-neutral-200"
+              >About us</Link>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Privacy Policy</a>
+              <Link to="/contact" className="text-neutral-600 dark:text-neutral-200"
+              >Contact Us</Link>
             </p>
           </div>
           </div>
@@ -109,7 +107,7 @@ export default function App() {
       
 
       {/* Copyright section */}
-      <div className="bg-neutral-200 p-4  text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-200 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
         
         <a
           className="text-neutral-800 dark:text-neutral-400"
@@ -120,3 +118,4 @@ export default function App() {
     </footer>
   );
 }
+export default  Footer;

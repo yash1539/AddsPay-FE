@@ -1,336 +1,199 @@
 import React from 'react'
-import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 
 const ContactForm = () => {
   return (
-    <form>
-    <div className="space-y-12">
-      <div className="border-b border-gray-900/10 pb-12">
-        <h2 className="text-base font-semibold leading-7 text-gray-900">Profile</h2>
-        <p className="mt-1 text-sm leading-6 text-gray-600">
-          This information will be displayed publicly so be careful what you share.
-        </p>
+    <div class="relative flex items-top justify-center min-h-screen bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
+    <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+      <div class="mt-8 overflow-hidden">
+        <div class="grid pb-10 grid-cols-1 md:grid-cols-2">
+          <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+            <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
+              Get in touch
+            </h1>
+            <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
+              Fill in the form to start a conversation
+            </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-          <div className="sm:col-span-4">
-            <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
-              Username
-            </label>
-            <div className="mt-2">
-              <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm">workcation.com/</span>
-                <input
-                  type="text"
-                  name="username"
-                  id="username"
-                  autoComplete="username"
-                  className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                  placeholder="janesmith"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="col-span-full">
-            <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
-              About
-            </label>
-            <div className="mt-2">
-              <textarea
-                id="about"
-                name="about"
-                rows={3}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
-              />
-            </div>
-            <p className="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
-          </div>
-
-          <div className="col-span-full">
-            <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900">
-              Photo
-            </label>
-            <div className="mt-2 flex items-center gap-x-3">
-              <UserCircleIcon className="h-12 w-12 text-gray-300" aria-hidden="true" />
-              <button
-                type="button"
-                className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+            <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                viewBox="0 0 24 24"
+                class="w-8 h-8 text-gray-500"
               >
-                Change
-              </button>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <div class="ml-4 text-md tracking-wide font-semibold w-full">
+                RZ - 1124/1, Ground Floor, Street No 14/5, Sadh Nagar, Palam
+                Colony, New Delhi - 110045
+              </div>
             </div>
-          </div>
 
-          <div className="col-span-full">
-            <label htmlFor="cover-photo" className="block text-sm font-medium leading-6 text-gray-900">
-              Cover photo
-            </label>
-            <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
-              <div className="text-center">
-                <PhotoIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
-                <div className="mt-4 flex text-sm leading-6 text-gray-600">
-                  <label
-                    htmlFor="file-upload"
-                    className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
-                  >
-                    <span>Upload a file</span>
-                    <input id="file-upload" name="file-upload" type="file" className="sr-only" />
-                  </label>
-                  <p className="pl-1">or drag and drop</p>
-                </div>
-                <p className="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+            <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                viewBox="0 0 24 24"
+                class="w-8 h-8 text-gray-500"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                +91 8383985527
+              </div>
+            </div>
+
+            <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                viewBox="0 0 24 24"
+                class="w-8 h-8 text-gray-500"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                support@addspay.in
+              </div>
+            </div>
+            <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+                />
+              </svg>
+
+              <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                www.addspay.in
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="border-b border-gray-900/10 pb-12">
-        <h2 className="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-        <p className="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
-
-        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-          <div className="sm:col-span-3">
-            <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
-              First name
-            </label>
-            <div className="mt-2">
+          <form class="px-6 flex flex-col justify-center">
+            <div class="flex flex-col">
+              <label for="name" class="hidden">
+                Full Name
+              </label>
               <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                autoComplete="given-name"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                type="name"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
-          </div>
 
-          <div className="sm:col-span-3">
-            <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-              Last name
-            </label>
-            <div className="mt-2">
+            <div class="flex flex-col mt-2">
+              <label for="email" class="hidden">
+                Email
+              </label>
               <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                autoComplete="family-name"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-
-          <div className="sm:col-span-4">
-            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-              Email address
-            </label>
-            <div className="mt-2">
-              <input
-                id="email"
-                name="email"
                 type="email"
-                autoComplete="email"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
-          </div>
 
-          <div className="sm:col-span-3">
-            <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
-              Country
-            </label>
-            <div className="mt-2">
-              <select
-                id="country"
-                name="country"
-                autoComplete="country-name"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-              >
-                <option>United States</option>
-                <option>Canada</option>
-                <option>Mexico</option>
-              </select>
+            <div class="flex flex-col mt-2">
+              <label for="tel" class="hidden">
+                Number
+              </label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Phone Number"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+              />
             </div>
-          </div>
-
-          <div className="col-span-full">
-            <label htmlFor="street-address" className="block text-sm font-medium leading-6 text-gray-900">
-              Street address
-            </label>
-            <div className="mt-2">
+            <div class="flex flex-col">
+              <label for="subject" class="hidden">
+                Subject
+              </label>
               <input
                 type="text"
-                name="street-address"
-                id="street-address"
-                autoComplete="street-address"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
-          </div>
-
-          <div className="sm:col-span-2 sm:col-start-1">
-            <label htmlFor="city" className="block text-sm font-medium leading-6 text-gray-900">
-              City
-            </label>
-            <div className="mt-2">
-              <input
-                type="text"
-                name="city"
-                id="city"
-                autoComplete="address-level2"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            <div class="flex flex-col">
+              <label for="description" class="hidden">
+                Description
+              </label>
+              <textarea
+                rows={3}
+                name="description"
+                id="description"
+                placeholder="Description"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
-          </div>
-
-          <div className="sm:col-span-2">
-            <label htmlFor="region" className="block text-sm font-medium leading-6 text-gray-900">
-              State / Province
-            </label>
-            <div className="mt-2">
-              <input
-                type="text"
-                name="region"
-                id="region"
-                autoComplete="address-level1"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-
-          <div className="sm:col-span-2">
-            <label htmlFor="postal-code" className="block text-sm font-medium leading-6 text-gray-900">
-              ZIP / Postal code
-            </label>
-            <div className="mt-2">
-              <input
-                type="text"
-                name="postal-code"
-                id="postal-code"
-                autoComplete="postal-code"
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
+            <button
+              type="submit"
+              class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-      </div>
-
-      <div className="border-b border-gray-900/10 pb-12">
-        <h2 className="text-base font-semibold leading-7 text-gray-900">Notifications</h2>
-        <p className="mt-1 text-sm leading-6 text-gray-600">
-          We'll always let you know about important changes, but you pick what else you want to hear about.
-        </p>
-
-        <div className="mt-10 space-y-10">
-          <fieldset>
-            <legend className="text-sm font-semibold leading-6 text-gray-900">By Email</legend>
-            <div className="mt-6 space-y-6">
-              <div className="relative flex gap-x-3">
-                <div className="flex h-6 items-center">
-                  <input
-                    id="comments"
-                    name="comments"
-                    type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                  />
-                </div>
-                <div className="text-sm leading-6">
-                  <label htmlFor="comments" className="font-medium text-gray-900">
-                    Comments
-                  </label>
-                  <p className="text-gray-500">Get notified when someones posts a comment on a posting.</p>
-                </div>
-              </div>
-              <div className="relative flex gap-x-3">
-                <div className="flex h-6 items-center">
-                  <input
-                    id="candidates"
-                    name="candidates"
-                    type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                  />
-                </div>
-                <div className="text-sm leading-6">
-                  <label htmlFor="candidates" className="font-medium text-gray-900">
-                    Candidates
-                  </label>
-                  <p className="text-gray-500">Get notified when a candidate applies for a job.</p>
-                </div>
-              </div>
-              <div className="relative flex gap-x-3">
-                <div className="flex h-6 items-center">
-                  <input
-                    id="offers"
-                    name="offers"
-                    type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                  />
-                </div>
-                <div className="text-sm leading-6">
-                  <label htmlFor="offers" className="font-medium text-gray-900">
-                    Offers
-                  </label>
-                  <p className="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend className="text-sm font-semibold leading-6 text-gray-900">Push Notifications</legend>
-            <p className="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p>
-            <div className="mt-6 space-y-6">
-              <div className="flex items-center gap-x-3">
-                <input
-                  id="push-everything"
-                  name="push-notifications"
-                  type="radio"
-                  className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                />
-                <label htmlFor="push-everything" className="block text-sm font-medium leading-6 text-gray-900">
-                  Everything
-                </label>
-              </div>
-              <div className="flex items-center gap-x-3">
-                <input
-                  id="push-email"
-                  name="push-notifications"
-                  type="radio"
-                  className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                />
-                <label htmlFor="push-email" className="block text-sm font-medium leading-6 text-gray-900">
-                  Same as email
-                </label>
-              </div>
-              <div className="flex items-center gap-x-3">
-                <input
-                  id="push-nothing"
-                  name="push-notifications"
-                  type="radio"
-                  className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                />
-                <label htmlFor="push-nothing" className="block text-sm font-medium leading-6 text-gray-900">
-                  No push notifications
-                </label>
-              </div>
-            </div>
-          </fieldset>
+        <div className=" rounded w-full h-full">
+          <iframe
+            width="100%"
+            height="160%"
+            frameBorder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="map"
+            scrolling="no"
+            src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+          ></iframe>
         </div>
       </div>
     </div>
-
-    <div className="mt-6 flex items-center justify-end gap-x-6">
-      <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
-        Cancel
-      </button>
-      <button
-        type="submit"
-        className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-      >
-        Save
-      </button>
-    </div>
-  </form>
+  </div>
   )
 }
 
