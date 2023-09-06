@@ -3,8 +3,8 @@ import React from "react";
 const ListingCard = () => {
   return (
     <>
-      <div className="py-6">
-        <div className="flex bg-white rounded-lg shadow-lg overflow-hidden   mx-auto max-w-sm lg:max-w-3xl">
+      {/* <div className="py-6">
+        <div className=" flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden   mx-auto max-w-sm lg:max-w-3xl">
           <div className="relative  block lg:w-1/2 bg-cover bg-[url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')] ">
             <button className="h-10 m-3 rounded w-20 text-white absolute top-0 right-0  bg-red-600">
               feature
@@ -25,18 +25,18 @@ const ListingCard = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="w-6 h-6"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
                 />
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                 />
               </svg>
@@ -65,36 +65,38 @@ const ListingCard = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="w-4 h-4 m-1"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M4.5 12.75l6 6 9-13.5"
                   />
                 </svg>
                 <span>feature</span>
               </button>
 
-              {/* <span className="border-b w-full"></span> */}
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col justify-center h-screen">
-        <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
-          <div className="w-full md:w-1/3 bg-white grid place-items-center">
+      <div className="flex flex-col rounded-l-xl justify-center pb-10">
+        <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+          <div className=" rounded-l-xl relative w-full md:w-3/6 bg-white grid place-items-center">
             <img
               src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt="tailwind logo"
-              className="rounded-xl"
+              className="rounded-l-xl h-[100%]"
             />
+             <button className="h-10 m-3 rounded w-20 text-white absolute top-0 right-0  bg-red-600">
+              feature
+            </button>
           </div>
-          <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-            <div className="flex justify-between item-center">
+          <div className="w-full md:w-3/6 bg-white flex flex-col justify-between space-y-2 p-3">
+            {/* <div className="flex justify-between item-center">
               <p className="text-gray-500 font-medium hidden md:block">
                 Vacations
               </p>
@@ -131,8 +133,8 @@ const ListingCard = () => {
               <div className="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
                 Superhost
               </div>
-            </div>
-            <h3 className="font-black text-gray-800 md:text-3xl text-xl">
+            </div> */}
+            <h3 className="font-black text-gray-800 md:text-2xl text-xl">
               The Majestic and Wonderful Bahamas
             </h3>
             <p className="md:text-lg text-gray-500 text-base">
@@ -140,12 +142,66 @@ const ListingCard = () => {
               and diversity. With 16 major islands, The Bahamas is an unmatched
               destination
             </p>
-            <p className="text-xl font-black text-gray-800">
-              $110
-              <span className="font-normal text-gray-600 text-base">
-                /night
-              </span>
-            </p>
+            <div className="flex py-1 justify-center text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+              Lorem ipsum dolor sit amet consectetur,
+            </div>
+            <div className=" flex items-center  justify-around">
+              <button className="h-10 m-4 rounded w-1/2 text-white  flex items-center justify-center  bg-green-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-4 m-1 h-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+                <span>feature</span>
+              </button>
+              <button className="h-10 m-4 rounded w-1/2 text-white flex items-center justify-center   bg-blue-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-4 h-4 m-1"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+                <span>feature</span>
+              </button>
+
+              {/* <span className="border-b w-full"></span> */}
+            </div>
           </div>
         </div>
       </div>

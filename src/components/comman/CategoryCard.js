@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CategoryCard = ({name,img}) => {
-    console.log(name , img)
   return (
     <>
     <div className="group relative rounded-lg overflow-hidden shadow-xl   hover:scale-105 transition duration-500 cursor-pointer ">
