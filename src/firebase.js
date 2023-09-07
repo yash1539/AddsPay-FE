@@ -1,15 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-
 const firebaseConfig = {
-    apiKey: "AIzaSyBiY-1wxowDAZjZD_McXoVuyoAHzpFvgyA",
-    authDomain: "addspay-stage.firebaseapp.com",
-    projectId: "addspay-stage",
-    storageBucket: "addspay-stage.appspot.com",
-    messagingSenderId: "650970274879",
-    appId: "1:650970274879:web:0b532010499cdf78356c8a",
-    measurementId: "G-W1TLWSR98D"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.API_ID,
+    measurementId: process.env.MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
