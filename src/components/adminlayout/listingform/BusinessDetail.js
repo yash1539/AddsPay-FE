@@ -7,7 +7,7 @@ const Card = ({ title, width }) => (
   </div>
 );
 
-const App = () => {
+const BussinessDetail = () => {
   return (
     <div className="pb-24 ">
 
@@ -270,4 +270,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default BussinessDetail;
