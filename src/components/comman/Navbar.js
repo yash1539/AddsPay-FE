@@ -11,6 +11,7 @@ const Navbar = () => {
   useEffect(() => {
     setUrl(location.pathname);
   }, [location]);
+
   return (
     <>
       <NavBanner />

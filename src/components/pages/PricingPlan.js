@@ -43,7 +43,7 @@ const PricingPlan = () => {
         "Unlimited Aminities",
         "Unlimited Photos",
         "Unlimited Videos",
-        "Featured Listing Not Available",
+        "Featured Listing  Available",
         "1 Featured Listing Submissions",
       ],
     },
@@ -58,7 +58,7 @@ const PricingPlan = () => {
         <div className="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded"></div>
 
         <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
-          <div className="relative block flex flex-col md:flex-row items-center">
+          <div className="relative  flex flex-col md:flex-row items-center">
             
             
      

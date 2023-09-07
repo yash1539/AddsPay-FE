@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 
 const ListingForm = () => {
   const [step, setStep] = useState(1);
@@ -13,7 +13,7 @@ const ListingForm = () => {
     e.preventDefault(); // Prevent default form submission behavior
 
     if (step === 1) {
-      // Validation for the first step can be added here
+      // Validation htmlFor the first step can be added here
       // if (!formData.businessName || !formData.slug) {
       //   alert("Business name and slug are required.");
       //   return;
@@ -49,7 +49,7 @@ const ListingForm = () => {
                 placeholder=" "
               />
               <label
-                for="floating_email"
+                htmlFor="floating_email"
                 className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Business Name
@@ -64,7 +64,7 @@ const ListingForm = () => {
                 placeholder=" "
               />
               <label
-                for="floating_password"
+                htmlFor="floating_password"
                 className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Business Email
@@ -79,7 +79,7 @@ const ListingForm = () => {
                 placeholder=" "
               />
               <label
-                for="floating_repeat_password"
+                htmlFor="floating_repeat_password"
                 className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Street Address
@@ -87,14 +87,14 @@ const ListingForm = () => {
             </div>
             <div className="relative z-0 w-full mb-6 group">
               <label
-                for="countries"
-                class="block mb-2 text-sm font-medium text-gray-900"
+                htmlFor="countries"
+                className="block mb-2 text-sm font-medium text-gray-900"
               >
                 Select Listing Category
               </label>
               <select
                 id="countries"
-                class="block py-2.5 px-0 w-full  text-gray-900  border-0 border-b-2 border-gray-300 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full  text-gray-900  border-0 border-b-2 border-gray-300 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               >
                 <option>Choose Listing Category</option>
                 <option value="US">United States</option>
@@ -106,14 +106,14 @@ const ListingForm = () => {
             <div className="grid md:grid-cols-2 md:gap-6">
               <div className="relative z-0 w-full mb-6 group">
                 <label
-                  for="countries"
-                  class="block mb-2 text-sm font-medium text-gray-900"
+                  htmlFor="countries"
+                  className="block mb-2 text-sm font-medium text-gray-900"
                 >
                   Select an option
                 </label>
                 <select
                   id="countries"
-                  class="block py-2.5 px-0 w-full  text-gray-900  border-0 border-b-2 border-gray-300 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full  text-gray-900  border-0 border-b-2 border-gray-300 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 >
                   <option>Select City</option>
                   <option value="US">United States</option>
@@ -124,14 +124,14 @@ const ListingForm = () => {
               </div>
               <div className="relative z-0 w-full mb-6 group">
                 <label
-                  for="countries"
-                  class="block mb-2 text-sm font-medium text-gray-900"
+                  htmlFor="countries"
+                  className="block mb-2 text-sm font-medium text-gray-900"
                 >
                   Select State
                 </label>
                 <select
                   id="countries"
-                  class="block py-2.5 px-0 w-full  text-gray-900  border-0 border-b-2 border-gray-300 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full  text-gray-900  border-0 border-b-2 border-gray-300 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 >
                   <option>Select State</option>
                   <option value="US">United States</option>
@@ -151,7 +151,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_company"
+                  htmlFor="floating_company"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Pincode
@@ -167,7 +167,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Phone number
@@ -189,7 +189,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Website
@@ -204,7 +204,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_company"
+                  htmlFor="floating_company"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Instagram
@@ -221,7 +221,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Facebook
@@ -236,7 +236,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_company"
+                  htmlFor="floating_company"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   LinkenIn
@@ -253,7 +253,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Tumblr
@@ -268,7 +268,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_company"
+                  htmlFor="floating_company"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Pinterest
@@ -285,7 +285,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Youtube
@@ -300,7 +300,7 @@ const ListingForm = () => {
                 placeholder=" "
               />
               <label
-                for="floating_company"
+                htmlFor="floating_company"
                 className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Instagram Link
@@ -323,7 +323,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Logo
@@ -338,7 +338,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_company"
+                  htmlFor="floating_company"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Banner Image
@@ -353,7 +353,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_company"
+                  htmlFor="floating_company"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Images
@@ -368,7 +368,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_company"
+                  htmlFor="floating_company"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Thumbnail
@@ -384,7 +384,7 @@ const ListingForm = () => {
                 placeholder=" "
               />
               <label
-                for="floating_email"
+                htmlFor="floating_email"
                 className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Business Description
@@ -406,7 +406,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Product Image
@@ -421,7 +421,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Product Name
@@ -436,7 +436,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Product Price
@@ -451,7 +451,7 @@ const ListingForm = () => {
                   placeholder=" "
                 />
                 <label
-                  for="floating_phone"
+                  htmlFor="floating_phone"
                   className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Product Short Description
@@ -464,7 +464,9 @@ const ListingForm = () => {
         return null;
     }
   };
-
+  useEffect(()=>{
+    renderStep()
+  },[step])
   return (
     <div className="p-4">
       <form className="max-w-screen-md mx-auto" onSubmit={handleNextStep}>
