@@ -3,6 +3,7 @@ import CategorySection from "./CategorySection";
 import PricingPlan from "./PricingPlan";
 import ProductList from "../comman/ProductList";
 import AboutUs from "./AboutUs";
+import GallerySection from "../comman/GallerySection";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
     <>
     <CategorySection/>
     <ProductList/>
+    <GallerySection/>
     <AboutUs/>
     <PricingPlan/>
     </>
