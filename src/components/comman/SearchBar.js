@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function SearchBar() {
-    const [selectedCategory, setSelectedCategory] = useState('All categories');
+    const [selectedCategory, setSelectedCategory] = useState('categories');
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -51,7 +51,7 @@ function SearchBar() {
                                             selectedCategory === 'All categories' ? 'bg-gray-100 dark:bg-gray-600 dark:text-white' : ''
                                         }`}
                                     >
-                                        All categories
+                                    categories
                                     </button>
                                 </li>
                                 <li>
