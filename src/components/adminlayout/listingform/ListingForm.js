@@ -1,4 +1,6 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
+import { storage } from '../../../firebase.js'; // Import your Firebase configuration
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; // Import Firebase Storage functions
 
 const ListingForm = () => {
   const [step, setStep] = useState(1);
@@ -8,6 +10,22 @@ const ListingForm = () => {
     doubleInput1: "",
     doubleInput2: "",
   });
+
+
+  function uploadImage(file) {
+    const imageName = `listing-logo-${new Date().getTime()}`;
+    const storageRef = ref(storage, imageName);
+
+    uploadBytes(storageRef, file).then((snapshot) => {
+      getDownloadURL(snapshot.ref).then((downloadURL) => {
+        localStorage.setItem('listingLogoURL', downloadURL);
+        console.log(`Image URL: ${downloadURL}`);
+      });
+    }).catch((error) => {
+      console.error('Error uploading image: ', error);
+    });
+  }
+
 
   const handleNextStep = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
@@ -317,10 +335,11 @@ const ListingForm = () => {
               <div className="relative z-0 w-full mb-6 group">
                 <input
                   type="file"
-                  name="floating_phone"
-                  id="floating_phone"
-                  className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  name="floating_company"
+                  id="floating_company"
+                  className="block py-2.5 px-0 w-full text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
+                  onChange={(e) => uploadImage(e.target.files[0])}
                 />
                 <label
                   htmlFor="floating_phone"
@@ -464,9 +483,9 @@ const ListingForm = () => {
         return null;
     }
   };
-  useEffect(()=>{
+  useEffect(() => {
     renderStep()
-  },[step])
+  }, [step])
   return (
     <div className="p-4">
       <form className="max-w-screen-md mx-auto" onSubmit={handleNextStep}>

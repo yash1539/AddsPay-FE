@@ -21,6 +21,9 @@ export const signInWithGoogle = () => {
         const name = result.user.displayName;
         const email = result.user.email;
         const profilePic = result.user.photoURL;
+        result.user.getIdToken().then((idToken) => {
+            console.log("ID Token auth: ", idToken);
+        });
         localStorage.setItem("name", name);
         localStorage.setItem("email", email);
         localStorage.setItem("photo", profilePic);
