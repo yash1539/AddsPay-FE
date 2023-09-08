@@ -4,11 +4,13 @@ import PricingPlan from "./PricingPlan";
 import ProductList from "../comman/ProductList";
 import AboutUs from "./AboutUs";
 import GallerySection from "../comman/GallerySection";
+import SearchBar from "../comman/SearchBar";
 
 const Home = () => {
   return (
   
     <>
+    <SearchBar/>
     <CategorySection/>
     <ProductList/>
     <GallerySection/>
