@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {signInWithPopup} from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
 import { auth , provider } from "../../firebase";
@@ -29,9 +29,7 @@ const Login = () => {
     });
   }
 
-  useEffect(() => {
-  
-  });
+
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">

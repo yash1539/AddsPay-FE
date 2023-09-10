@@ -153,7 +153,7 @@ const PricingPlan = () => {
                   >
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
                     ></path>
                     <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
@@ -174,7 +174,7 @@ const PricingPlan = () => {
               <div className="self-center py-2">
               <ul className="mt-6 ">
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -189,7 +189,7 @@ const PricingPlan = () => {
                     <span>1 Listings Submission</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -204,7 +204,7 @@ const PricingPlan = () => {
                     <span>365 Days Expiration</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -219,7 +219,7 @@ const PricingPlan = () => {
                     <span>5 Aminities</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -234,7 +234,7 @@ const PricingPlan = () => {
                     <span>10 Photos</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -249,7 +249,7 @@ const PricingPlan = () => {
                     <span>Unlimited Videos</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -264,7 +264,7 @@ const PricingPlan = () => {
                     <span>Feature Listing Not Available</span>
                   </li>
                   <li className="flex items-center font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -282,7 +282,7 @@ const PricingPlan = () => {
               </div>
               <div className="p-4">
                 <a
-                  href="#"
+                  href="/#"
                   className="inline-block w-full py-2 font-medium text-center text-blue-600 border border-blue-600 rounded-full hover:bg-blue-700 hover:text-gray-200 dark:border-gray-500 dark:hover:bg-gray-900 dark:hover:border-gray-900 dark:hover:text-gray-300 dark:text-gray-400"
                 >
                   Buy Now{" "}
@@ -311,7 +311,7 @@ const PricingPlan = () => {
                   >
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
                     ></path>
                     <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
@@ -330,7 +330,7 @@ const PricingPlan = () => {
               <div className="self-center py-2">
               <ul className="mt-6 ">
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -345,7 +345,7 @@ const PricingPlan = () => {
                     <span>1 Listings Submission</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -360,7 +360,7 @@ const PricingPlan = () => {
                     <span>365 Days Expiration</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -375,7 +375,7 @@ const PricingPlan = () => {
                     <span>5 Aminities</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -390,7 +390,7 @@ const PricingPlan = () => {
                     <span>Unlimited Photos</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -405,7 +405,7 @@ const PricingPlan = () => {
                     <span>Unlimited Videos</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -420,7 +420,7 @@ const PricingPlan = () => {
                     <span>Feature Listing Not Available</span>
                   </li>
                   <li className="flex items-center font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -438,7 +438,7 @@ const PricingPlan = () => {
               </div>
               <div className="p-4">
                 <a
-                  href="#"
+                  href="/#"
                   className="inline-block w-full py-2 font-medium text-center text-blue-600 border border-blue-600 rounded-full hover:bg-blue-700 hover:text-gray-200 dark:border-gray-500 dark:hover:bg-gray-900 dark:hover:border-gray-900 dark:hover:text-gray-300 dark:text-gray-400"
                 >
                   Buy Now{" "}
@@ -467,7 +467,7 @@ const PricingPlan = () => {
                   >
                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
                     ></path>
                     <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
@@ -486,7 +486,7 @@ const PricingPlan = () => {
               <div className="self-center py-2">
               <ul className="mt-6 ">
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -501,7 +501,7 @@ const PricingPlan = () => {
                     <span>1 Listings Submission</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -516,7 +516,7 @@ const PricingPlan = () => {
                     <span>365 Days Expiration</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -531,7 +531,7 @@ const PricingPlan = () => {
                     <span>5 Aminities</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -546,7 +546,7 @@ const PricingPlan = () => {
                     <span>Unlimited Photos</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -561,7 +561,7 @@ const PricingPlan = () => {
                     <span>Unlimited Videos</span>
                   </li>
                   <li className="flex items-center mb-3 font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -576,7 +576,7 @@ const PricingPlan = () => {
                     <span>Feature Listing Available</span>
                   </li>
                   <li className="flex items-center font-medium text-gray-500 dark:text-gray-400">
-                    <a href="#" className="mr-2 text-blue-900 dark:text-gray-400">
+                    <a href="/#" className="mr-2 text-blue-900 dark:text-gray-400">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -594,7 +594,7 @@ const PricingPlan = () => {
               </div>
               <div className="p-4">
                 <a
-                  href="#"
+                  href="/#"
                   className="inline-block w-full py-2 font-medium text-center text-blue-600 border border-blue-600 rounded-full hover:bg-blue-700 hover:text-gray-200 dark:border-gray-500 dark:hover:bg-gray-900 dark:hover:border-gray-900 dark:hover:text-gray-300 dark:text-gray-400"
                 >
                   Buy Now{" "}

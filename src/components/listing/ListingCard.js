@@ -124,7 +124,7 @@ const ListingCard = () => {
     //               fill="currentColor"
     //             >
     //               <path
-    //                 fill-rule="evenodd"
+    //                 fillRule="evenodd"
     //                 d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
     //                 clip-rule="evenodd"
     //               />
@@ -210,7 +210,7 @@ const ListingCard = () => {
       <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
         <div className="border border-gray-300 ">
           <div className="relative bg-gray-200">
-            <a href="#" className="">
+            <a href="/#" className="">
               <img
                 src="https://i.postimg.cc/pdcRLwSq/pexels-igor-ovsyannykov-205961.jpg"
                 alt=""
@@ -237,7 +237,7 @@ const ListingCard = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -251,7 +251,7 @@ const ListingCard = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -265,7 +265,7 @@ const ListingCard = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -297,7 +297,7 @@ const ListingCard = () => {
           </div>
           <div className="flex justify-between p-4 border-t border-gray-300 ">
             <a
-              href="#"
+              href="/#"
               className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
             >
               <svg
@@ -312,7 +312,7 @@ const ListingCard = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="/#"
               className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
             >
               <svg
@@ -327,7 +327,7 @@ const ListingCard = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="/#"
               className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
             >
               <svg

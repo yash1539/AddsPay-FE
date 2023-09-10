@@ -11,47 +11,47 @@ import ContactUs from "../../pages/ContactUs";
 const BussinessDetail = () => {
   return (
     <>
-      <div class="bg-gray-100">
-        <div class="container mx-auto py-8">
-          <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
-            <div class="col-span-4 sm:col-span-3">
-              <div class="bg-white shadow rounded-lg p-6">
-                <div class="flex flex-col items-center">
+      <div className="bg-gray-100">
+        <div className="container mx-auto py-8">
+          <div className="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
+            <div className="col-span-4 sm:col-span-3">
+              <div className="bg-white shadow rounded-lg p-6">
+                <div className="flex flex-col items-center">
                   <img alt=""
                     src="https://randomuser.me/api/portraits/men/94.jpg"
-                    class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
+                    className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
                   ></img>
-                  <h1 class="text-xl font-bold">Bussiness Name</h1>
-                  <p class="text-gray-600">Bussiness type </p>
-                  <div class="mt-6 flex flex-wrap gap-4 justify-center">
+                  <h1 className="text-xl font-bold">Bussiness Name</h1>
+                  <p className="text-gray-600">Bussiness type </p>
+                  <div className="mt-6 flex flex-wrap gap-4 justify-center">
                     <a
                       href="/#"
-                      class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
                     >
                       Contact
                     </a>
-                    {/* <a href="/#" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a> */}
+                    {/* <a href="/#" className="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a> */}
                   </div>
                 </div>
-                <hr class="my-6 border-t border-gray-300" />
-                <div class="flex flex-col">
-                  <span class="text-gray-600 uppercase font-bold tracking-wider mb-2">
+                <hr className="my-6 border-t border-gray-300" />
+                <div className="flex flex-col">
+                  <span className="text-gray-600 uppercase font-bold tracking-wider mb-2">
                     Sevices
                   </span>
                   <ul>
-                    <li class="mb-2">JavaScript</li>
-                    <li class="mb-2">React</li>
-                    <li class="mb-2">Node.js</li>
-                    <li class="mb-2">HTML/CSS</li>
-                    <li class="mb-2">Tailwind Css</li>
+                    <li className="mb-2">JavaScript</li>
+                    <li className="mb-2">React</li>
+                    <li className="mb-2">Node.js</li>
+                    <li className="mb-2">HTML/CSS</li>
+                    <li className="mb-2">Tailwind Css</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-span-4 sm:col-span-9">
-              <div class="bg-white shadow rounded-lg p-6">
-                <h2 class="text-xl font-bold mb-4">Business Description</h2>
-                <p class="text-gray-700">
+            <div className="col-span-4 sm:col-span-9">
+              <div className="bg-white shadow rounded-lg p-6">
+                <h2 className="text-xl font-bold mb-4">Business Description</h2>
+                <p className="text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   finibus est vitae tortor ullamcorper, ut vestibulum velit
                   convallis. Aenean posuere risus non velit egestas suscipit.
@@ -61,10 +61,10 @@ const BussinessDetail = () => {
                   luctus risus rhoncus id.
                 </p>
 
-                <h3 class="font-semibold text-center mt-3 -mb-2">Find me on</h3>
-                <div class="flex justify-center items-center gap-6 my-6">
+                <h3 className="font-semibold text-center mt-3 -mb-2">Find me on</h3>
+                <div className="flex justify-center items-center gap-6 my-6">
                   <a 
-                    class="text-gray-700 hover:text-orange-600"
+                    className="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds LinkedIn"
                     href="/#"
                     target="_blank"
@@ -72,7 +72,7 @@ const BussinessDetail = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      class="h-6"
+                      className="h-6"
                     >
                       <path
                         fill="currentColor"
@@ -81,7 +81,7 @@ const BussinessDetail = () => {
                     </svg>
                   </a>
                   <a
-                    class="text-gray-700 hover:text-orange-600"
+                    className="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds YouTube"
                     href="/#"
                     target="_blank"
@@ -89,7 +89,7 @@ const BussinessDetail = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 576 512"
-                      class="h-6"
+                      className="h-6"
                     >
                       <path
                         fill="currentColor"
@@ -98,7 +98,7 @@ const BussinessDetail = () => {
                     </svg>
                   </a>
                   <a
-                    class="text-gray-700 hover:text-orange-600"
+                    className="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds Facebook"
                     href="/#"
                     target="_blank"
@@ -106,7 +106,7 @@ const BussinessDetail = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 320 512"
-                      class="h-6"
+                      className="h-6"
                     >
                       <path
                         fill="currentColor"
@@ -115,7 +115,7 @@ const BussinessDetail = () => {
                     </svg>
                   </a>
                   <a
-                    class="text-gray-700 hover:text-orange-600"
+                    className="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds Instagram"
                     href="/#"
                     target="_blank"
@@ -123,7 +123,7 @@ const BussinessDetail = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
-                      class="h-6"
+                      className="h-6"
                     >
                       <path
                         fill="currentColor"
@@ -132,13 +132,13 @@ const BussinessDetail = () => {
                     </svg>
                   </a>
                   <a
-                    class="text-gray-700 hover:text-orange-600"
+                    className="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds Twitter"
                     href="/#"
                     target="_blank"
                   >
                     <svg
-                      class="h-6"
+                      className="h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
                     >
@@ -150,41 +150,41 @@ const BussinessDetail = () => {
                   </a>
                 </div>
 
-                <h2 class="text-xl font-bold mt-6 mb-4">Experience</h2>
-                <section class="flex items-center bg-gray-100 lg:h-screen">
-                  <div class="p-4 mx-auto max-w-7xl">
-                    <div class="grid grid-cols-1 gap-4 lg:gap-4 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                      <div class="mt-56 bg-white rounded shadow ">
-                        <div class="relative z-20 p-6 group">
-                          <div class="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
+                <h2 className="text-xl font-bold mt-6 mb-4">Experience</h2>
+                <section className="flex items-center bg-gray-100 lg:h-screen">
+                  <div className="p-4 mx-auto max-w-7xl">
+                    <div className="grid grid-cols-1 gap-4 lg:gap-4 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                      <div className="mt-56 bg-white rounded shadow ">
+                        <div className="relative z-20 p-6 group">
+                          <div className="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
                             <img
-                              class="object-cover w-full h-full transition-all group-hover:scale-110"
+                              className="object-cover w-full h-full transition-all group-hover:scale-110"
                               src="https://i.postimg.cc/x8LtrkfV/kenny-eliason-HIz-Gn9-FZDFU-unsplash.jpg"
                               alt=""
                             />
-                            <div class="absolute flex flex-col top-4 right-4">
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                            <div className="absolute flex flex-col top-4 right-4">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-heart"
+                                    className="bi bi-heart"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
                                   </svg>
                                 </div>
                               </a>
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-cart2"
+                                    className="bi bi-cart2"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
@@ -194,23 +194,23 @@ const BussinessDetail = () => {
                             </div>
                           </div>
                           <a href="/#">
-                            <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
+                            <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
                           </a>
-                          <p class="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
+                          <p className="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
                             <span>$150.00</span>
-                            <span class="text-xs font-semibold  line-through ">
+                            <span className="text-xs font-semibold  line-through ">
                               $200.00
                             </span>
                           </p>
-                          <div class="flex gap-1 text-orange-400">
+                          <div className="flex gap-1 text-orange-400">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -220,7 +220,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -230,7 +230,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -240,7 +240,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -250,7 +250,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star"
+                              className="bi bi-star"
                               viewBox="0 0 16 16"
                             >
                               <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -258,37 +258,37 @@ const BussinessDetail = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="mt-56 bg-white rounded shadow ">
-                        <div class="relative z-20 p-6 group">
-                          <div class="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
+                      <div className="mt-56 bg-white rounded shadow ">
+                        <div className="relative z-20 p-6 group">
+                          <div className="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
                             <img
-                              class="object-cover w-full h-full transition-all group-hover:scale-110"
+                              className="object-cover w-full h-full transition-all group-hover:scale-110"
                               src="https://i.postimg.cc/K8qmN64m/pexels-javon-swaby-2783873.jpg"
                               alt=""
                             />
-                            <div class="absolute flex flex-col top-4 right-4">
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                            <div className="absolute flex flex-col top-4 right-4">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-heart"
+                                    className="bi bi-heart"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
                                   </svg>
                                 </div>
                               </a>
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-cart2"
+                                    className="bi bi-cart2"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
@@ -298,23 +298,23 @@ const BussinessDetail = () => {
                             </div>
                           </div>
                           <a href="/#">
-                            <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
+                            <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
                           </a>
-                          <p class="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
+                          <p className="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
                             <span>$150.00</span>
-                            <span class="text-xs font-semibold  line-through ">
+                            <span className="text-xs font-semibold  line-through ">
                               $200.00
                             </span>
                           </p>
-                          <div class="flex gap-1 text-orange-400">
+                          <div className="flex gap-1 text-orange-400">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -324,7 +324,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -334,7 +334,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -344,7 +344,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -354,7 +354,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star"
+                              className="bi bi-star"
                               viewBox="0 0 16 16"
                             >
                               <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -362,37 +362,37 @@ const BussinessDetail = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="mt-56 bg-white rounded shadow ">
-                        <div class="relative z-20 p-6 group">
-                          <div class="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
+                      <div className="mt-56 bg-white rounded shadow ">
+                        <div className="relative z-20 p-6 group">
+                          <div className="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
                             <img
-                              class="object-cover w-full h-full transition-all group-hover:scale-110"
+                              className="object-cover w-full h-full transition-all group-hover:scale-110"
                               src="https://i.postimg.cc/sgKB6VR6/ryan-plomp-a-Ctb-RTwu-M-unsplash-1.jpg"
                               alt=""
                             />
-                            <div class="absolute flex flex-col top-4 right-4">
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                            <div className="absolute flex flex-col top-4 right-4">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-heart"
+                                    className="bi bi-heart"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
                                   </svg>
                                 </div>
                               </a>
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-cart2"
+                                    className="bi bi-cart2"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
@@ -402,23 +402,23 @@ const BussinessDetail = () => {
                             </div>
                           </div>
                           <a href="/#">
-                            <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
+                            <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
                           </a>
-                          <p class="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
+                          <p className="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
                             <span>$150.00</span>
-                            <span class="text-xs font-semibold  line-through ">
+                            <span className="text-xs font-semibold  line-through ">
                               $200.00
                             </span>
                           </p>
-                          <div class="flex gap-1 text-orange-400">
+                          <div className="flex gap-1 text-orange-400">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -428,7 +428,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -438,7 +438,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -448,7 +448,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -458,7 +458,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star"
+                              className="bi bi-star"
                               viewBox="0 0 16 16"
                             >
                               <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -466,37 +466,37 @@ const BussinessDetail = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="mt-56 bg-white rounded shadow ">
-                        <div class="relative z-20 p-6 group">
-                          <div class="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
+                      <div className="mt-56 bg-white rounded shadow ">
+                        <div className="relative z-20 p-6 group">
+                          <div className="relative block h-64 mb-4 -mt-56 overflow-hidden rounded -top-full ">
                             <img
-                              class="object-cover w-full h-full transition-all group-hover:scale-110"
+                              className="object-cover w-full h-full transition-all group-hover:scale-110"
                               src="https://i.postimg.cc/XqBnTJBL/pink-sweater-front.jpg"
                               alt=""
                             />
-                            <div class="absolute flex flex-col top-4 right-4">
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                            <div className="absolute flex flex-col top-4 right-4">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-heart"
+                                    className="bi bi-heart"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
                                   </svg>
                                 </div>
                               </a>
-                              <a href="/#" class="flex items-center">
-                                <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
+                              <a href="/#" className="flex items-center">
+                                <div className="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    class="bi bi-cart2"
+                                    className="bi bi-cart2"
                                     viewBox="0 0 16 16"
                                   >
                                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
@@ -506,23 +506,23 @@ const BussinessDetail = () => {
                             </div>
                           </div>
                           <a href="/#">
-                            <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
+                            <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
                           </a>
-                          <p class="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
+                          <p className="mb-3 text-lg font-bold text-blue-500 dark:text-blue-500 ">
                             <span>$150.00</span>
-                            <span class="text-xs font-semibold  line-through ">
+                            <span className="text-xs font-semibold  line-through ">
                               $200.00
                             </span>
                           </p>
-                          <div class="flex gap-1 text-orange-400">
+                          <div className="flex gap-1 text-orange-400">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -532,7 +532,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -542,7 +542,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -552,7 +552,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star-fill"
+                              className="bi bi-star-fill"
                               viewBox="0 0 16 16"
                             >
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -562,7 +562,7 @@ const BussinessDetail = () => {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="bi bi-star"
+                              className="bi bi-star"
                               viewBox="0 0 16 16"
                             >
                               <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />

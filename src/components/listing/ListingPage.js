@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import ListingCard from "./ListingCard";
 
 // const ListingPage = () => {
@@ -29,25 +29,25 @@ import ListingCard from "./ListingCard";
   }
   ```
 */
-import { Fragment, useState } from "react";
-import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  FunnelIcon,
-  MinusIcon,
-  PlusIcon,
-  Squares2X2Icon,
-} from "@heroicons/react/20/solid";
-import SearchBar from "../comman/SearchBar";
+import {  useState } from "react";
+// import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
+// import { XMarkIcon } from "@heroicons/react/24/outline";
+// import {
+//   ChevronDownIcon,
+//   FunnelIcon,
+//   MinusIcon,
+//   PlusIcon,
+//   Squares2X2Icon,
+// } from "@heroicons/react/20/solid";
+// import SearchBar from "../comman/SearchBar";
 
-const sortOptions = [
-  { name: "Most Popular", href: "#", current: true },
-  { name: "Best Rating", href: "#", current: false },
-  { name: "Newest", href: "#", current: false },
-  { name: "Price: Low to High", href: "#", current: false },
-  { name: "Price: High to Low", href: "#", current: false },
-];
+// const sortOptions = [
+//   { name: "Most Popular", href: "#", current: true },
+//   { name: "Best Rating", href: "#", current: false },
+//   { name: "Newest", href: "#", current: false },
+//   { name: "Price: Low to High", href: "#", current: false },
+//   { name: "Price: High to Low", href: "#", current: false },
+// ];
 // const subCategories = [
 //   { name: "Totes", href: "#" },
 //   { name: "Backpacks", href: "#" },
@@ -55,27 +55,27 @@ const sortOptions = [
 //   { name: "Hip Bags", href: "#" },
 //   { name: "Laptop Sleeves", href: "#" },
 // ];
-const filters = [
-  {
-    id: "color",
-    name: "Color",
-    options: [
-      { label: "Accepts Cash", value: "White", checked: false },
-      { label: "Accepts Credit Cards", value: "Beige", checked: false },
-      { label: "Accepts Online Payments", value: "Blue", checked: true },
-      { label: "Delivery", value: "Brown", checked: false },
-      { label: "Parking", value: "Green", checked: false },
-      //   { value: "purple", label: "Purple", checked: false },
-    ],
-  },
-];
+// const filters = [
+//   {
+//     id: "color",
+//     name: "Color",
+//     options: [
+//       { label: "Accepts Cash", value: "White", checked: false },
+//       { label: "Accepts Credit Cards", value: "Beige", checked: false },
+//       { label: "Accepts Online Payments", value: "Blue", checked: true },
+//       { label: "Delivery", value: "Brown", checked: false },
+//       { label: "Parking", value: "Green", checked: false },
+//       //   { value: "purple", label: "Purple", checked: false },
+//     ],
+//   },
+// ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 const ListingPage = () => {
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  // const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   return (
     // <>
@@ -401,7 +401,7 @@ const ListingPage = () => {
                 </li>
               </ul>
               <a
-                href="#"
+                href="/#"
                 className="text-base font-medium text-blue-500 hover:underline dark:text-blue-400"
               >
                 View More
@@ -473,7 +473,7 @@ const ListingPage = () => {
                 </li>
               </ul>
               <a
-                href="#"
+                href="/#"
                 className="text-base font-medium text-blue-500 hover:underline dark:text-blue-400"
               >
                 View More
@@ -505,7 +505,7 @@ const ListingPage = () => {
               <div className="items-center justify-between hidden px-3 py-2 bg-gray-100 md:flex ">
                 <div className="flex">
                   <a
-                    href="#"
+                    href="/#"
                     className="inline-block h-full p-2 mr-3 border rounded-md  "
                   >
                     <svg
@@ -517,13 +517,13 @@ const ListingPage = () => {
                       viewBox="0 0 16 16"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
                       ></path>
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="/#"
                     className="inline-block h-full p-2 mr-3 border rounded-md  "
                   >
                     <svg
@@ -538,7 +538,7 @@ const ListingPage = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="/#"
                     className="inline-block h-full p-2 mr-3 border rounded-md  "
                   >
                     <svg
@@ -587,7 +587,7 @@ const ListingPage = () => {
               {/* <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
                 <div className="border border-gray-300 ">
                   <div className="relative bg-gray-200">
-                    <a href="#" className="">
+                    <a href="/#" className="">
                       <img
                         src="https://i.postimg.cc/hj6h6Vwv/pexels-artem-beliaikin-2292919.jpg"
                         alt=""
@@ -614,7 +614,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -628,7 +628,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -642,7 +642,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -665,7 +665,7 @@ const ListingPage = () => {
                   </div>
                   <div className="flex justify-between p-4 border-t border-gray-300 ">
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -680,7 +680,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -695,7 +695,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -716,7 +716,7 @@ const ListingPage = () => {
               {/* <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
                 <div className="border border-gray-300 ">
                   <div className="relative bg-gray-200">
-                    <a href="#" className="">
+                    <a href="/#" className="">
                       <img
                         src="https://i.postimg.cc/pdcRLwSq/pexels-igor-ovsyannykov-205961.jpg"
                         alt=""
@@ -743,7 +743,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -757,7 +757,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -771,7 +771,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -794,7 +794,7 @@ const ListingPage = () => {
                   </div>
                   <div className="flex justify-between p-4 border-t border-gray-300 ">
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -809,7 +809,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -824,7 +824,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -845,7 +845,7 @@ const ListingPage = () => {
               {/* <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
                 <div className="border border-gray-300 ">
                   <div className="relative bg-gray-200">
-                    <a href="#" className="">
+                    <a href="/#" className="">
                       <img
                         src="https://i.postimg.cc/x1dZ1XSV/pexels-k-bra-do-u-10154821.jpg"
                         alt=""
@@ -872,7 +872,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -886,7 +886,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -900,7 +900,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -923,7 +923,7 @@ const ListingPage = () => {
                   </div>
                   <div className="flex justify-between p-4 border-t border-gray-300 ">
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -938,7 +938,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -953,7 +953,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -974,7 +974,7 @@ const ListingPage = () => {
               <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
                 <div className="border border-gray-300 ">
                   <div className="relative bg-gray-200">
-                    <a href="#" className="">
+                    <a href="/#" className="">
                       <img
                         src="https://i.postimg.cc/Vk57c2jY/pexels-meruyert-gonullu-6152391.jpg"
                         alt=""
@@ -1001,7 +1001,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1015,7 +1015,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1029,7 +1029,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1052,7 +1052,7 @@ const ListingPage = () => {
                   </div>
                   <div className="flex justify-between p-4 border-t border-gray-300 ">
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1067,7 +1067,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1082,7 +1082,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1103,7 +1103,7 @@ const ListingPage = () => {
               <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
                 <div className="border border-gray-300 ">
                   <div className="relative bg-gray-200">
-                    <a href="#" className="">
+                    <a href="/#" className="">
                       <img
                         src="https://i.postimg.cc/Dfg5476v/pexels-michael-burrows-7129126.jpg"
                         alt=""
@@ -1130,7 +1130,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1144,7 +1144,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1158,7 +1158,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1181,7 +1181,7 @@ const ListingPage = () => {
                   </div>
                   <div className="flex justify-between p-4 border-t border-gray-300 ">
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1196,7 +1196,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1211,7 +1211,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1232,7 +1232,7 @@ const ListingPage = () => {
               <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
                 <div className="border border-gray-300 ">
                   <div className="relative bg-gray-200">
-                    <a href="#" className="">
+                    <a href="/#" className="">
                       <img
                         src="https://i.postimg.cc/MKH0cVX5/pexels-pixabay-264636.jpg"
                         alt=""
@@ -1259,7 +1259,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1273,7 +1273,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1287,7 +1287,7 @@ const ListingPage = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/#">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -1310,7 +1310,7 @@ const ListingPage = () => {
                   </div>
                   <div className="flex justify-between p-4 border-t border-gray-300 ">
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1325,7 +1325,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1340,7 +1340,7 @@ const ListingPage = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="/#"
                       className="text-gray-500  hover:text-red-500 dark:hover:text-red-300"
                     >
                       <svg
@@ -1364,7 +1364,7 @@ const ListingPage = () => {
                 <ul className="flex list-style-none">
                   <li className="page-item disabled ">
                     <a
-                      href="#"
+                      href="/#"
                       className="relative block pointer-events-none px-3 py-1.5 mr-3 text-base text-gray-700 transition-all duration-300  rounded-md  hover:text-gray-100 hover:bg-blue-600"
                     >
                       Previous
@@ -1372,7 +1372,7 @@ const ListingPage = () => {
                   </li>
                   <li className="page-item ">
                     <a
-                      href="#"
+                      href="/#"
                       className="relative block px-3 py-1.5 mr-3 text-base hover:text-blue-700 transition-all duration-300 hover:bg-blue-200 dark:hover:text-gray-400 dark:hover:bg-gray-700 rounded-md text-gray-100 bg-blue-400"
                     >
                       1
@@ -1380,7 +1380,7 @@ const ListingPage = () => {
                   </li>
                   <li className="page-item ">
                     <a
-                      href="#"
+                      href="/#"
                       className="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300  dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md mr-3  "
                     >
                       2
@@ -1388,7 +1388,7 @@ const ListingPage = () => {
                   </li>
                   <li className="page-item ">
                     <a
-                      href="#"
+                      href="/#"
                       className="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300  dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md mr-3 "
                     >
                       3
@@ -1396,7 +1396,7 @@ const ListingPage = () => {
                   </li>
                   <li className="page-item ">
                     <a
-                      href="#"
+                      href="/#"
                       className="relative block px-3 py-1.5 text-base text-gray-700 transition-all duration-300  dark:hover:bg-gray-700 hover:bg-blue-100 rounded-md "
                     >
                       Next
