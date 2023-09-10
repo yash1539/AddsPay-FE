@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,7 +18,7 @@ const Footer = () => {
               </div>
               <div className="w-full py-1 lg:w-auto lg:py-0">
                 <a
-                  href="#"
+                  href="/#"
                   className="inline-block w-full px-5 py-4 font-medium leading-4 text-center bg-blue-200 rounded-md dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-blue-300"
                 >
                   Subscribe
@@ -30,7 +29,7 @@ const Footer = () => {
           <div className="flex flex-wrap py-10 -mx-3">
             <div className="w-full px-4 mb-11 md:w-1/2 lg:w-5/12 lg:mb-0">
               <a
-                href="#"
+                href="/#"
                 className="inline-block mb-4 text-xl font-bold text-gray-200 dark:text-gray-400"
               >
                 About Company
@@ -40,7 +39,7 @@ const Footer = () => {
               </p>
               <div className="flex justify-start mt-4 ">
                 <a
-                  href="#"
+                  href="/#"
                   type="button"
                   className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:hover:bg-gray-800 hover:border-blue-700 hover:bg-blue-700 w-9 h-9"
                 >
@@ -56,7 +55,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="/#"
                   type="button"
                   className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-blue-500 hover:bg-blue-500 w-9 h-9"
                 >
@@ -72,7 +71,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="/#"
                   type="button"
                   className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-red-700 text-text-gray-50 hover:bg-red-700 w-9 h-9"
                 >
@@ -88,7 +87,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="/#"
                   type="button"
                   className="m-1 leading-normal text-gray-400 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 hover:border-blue-600 hover:bg-blue-600 w-9 h-9"
                 >
@@ -121,12 +120,12 @@ const Footer = () => {
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                     ></path>
                   </svg>
                   <a
-                    href="#"
+                    href="/#"
                     className="inline-block text-base font-normal text-gray-300 dark:text-gray-400"
                   >
                     Home
@@ -142,12 +141,12 @@ const Footer = () => {
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                     ></path>
                   </svg>
                   <a
-                    href="#"
+                    href="/#"
                     className="inline-block text-base font-normal text-gray-300 dark:text-gray-400"
                   >
                     About Us
@@ -163,12 +162,12 @@ const Footer = () => {
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                     ></path>
                   </svg>
                   <a
-                    href="#"
+                    href="/#"
                     className="inline-block text-base font-normal text-gray-300 dark:text-gray-400"
                   >
                     Services

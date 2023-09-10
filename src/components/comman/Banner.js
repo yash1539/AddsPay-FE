@@ -1,5 +1,4 @@
 import React from 'react'
-import SearchBar from './SearchBar'
 function Banner() {
 const imageUrl= "https://i.postimg.cc/P5gCz1Wc/pexels-marc-mueller-380769.jpg"
     return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; // Import Firebase Storage functions
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // Import Firebase Storage functions
 import { storage } from "../../../firebase";
 const ListingForm = () => {
   const [step, setStep] = useState(1);
@@ -10,21 +10,21 @@ const ListingForm = () => {
     doubleInput2: "",
   });
 
-
   function uploadImage(file) {
     const imageName = `listing-logo-${new Date().getTime()}`;
     const storageRef = ref(storage, imageName);
 
-    uploadBytes(storageRef, file).then((snapshot) => {
-      getDownloadURL(snapshot.ref).then((downloadURL) => {
-        localStorage.setItem('listingLogoURL', downloadURL);
-        console.log(`Image URL: ${downloadURL}`);
+    uploadBytes(storageRef, file)
+      .then((snapshot) => {
+        getDownloadURL(snapshot.ref).then((downloadURL) => {
+          localStorage.setItem("listingLogoURL", downloadURL);
+          console.log(`Image URL: ${downloadURL}`);
+        });
+      })
+      .catch((error) => {
+        console.error("Error uploading image: ", error);
       });
-    }).catch((error) => {
-      console.error('Error uploading image: ', error);
-    });
   }
-
 
   const handleNextStep = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
@@ -478,9 +478,9 @@ const ListingForm = () => {
             </div>
           </div>
         );
-        case 4:
-          return(
-            <div>
+      case 4:
+        return (
+          <div>
             <div className="relative z-0 w-full mb-6 group">
               <input
                 type="text"
@@ -744,17 +744,16 @@ const ListingForm = () => {
             </div> */}
             </div>
           </div>
-          )
-        
+        );
+
       default:
         return null;
     }
   };
   useEffect(() => {
-    renderStep()
-  }, [step])
+    renderStep();
+  }, [step]);
   return (
-    
     <div className="p-4">
       <form className="max-w-screen-md mx-auto" onSubmit={handleNextStep}>
         <h2 className="text-xl font-semibold mb-4">Step {step}</h2>

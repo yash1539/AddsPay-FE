@@ -6,14 +6,14 @@
 // // Shimmer card to display with animation
 // const CardShimmer = () => {
 //   return (
-//     <div class="p-4 md:w-1/3">
-//       <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
-//         <div class="lg:h-48 bg-gray-400 md:h-36 w-full animate-pulse object-cover object-center"></div>
-//         <div class="p-6">
-//           <div class="flex items-center flex-wrap ">
+//     <div className="p-4 md:w-1/3">
+//       <div className="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+//         <div className="lg:h-48 bg-gray-400 md:h-36 w-full animate-pulse object-cover object-center"></div>
+//         <div className="p-6">
+//           <div className="flex items-center flex-wrap ">
 //             <a
 //               href="/#"
-//               class="bg-indigo-300 h-4 animate-pulse mt-2 w-32 inline-flex items-center md:mb-2 lg:mb-0"
+//               className="bg-indigo-300 h-4 animate-pulse mt-2 w-32 inline-flex items-center md:mb-2 lg:mb-0"
 //             ></a>
 //           </div>
 //         </div>
@@ -26,8 +26,8 @@
 
 // const Shimmer = () => {
 //   return (
-//     <div class="container px-5  mx-auto">
-//       <div class="flex flex-wrap -m-4">
+//     <div className="container px-5  mx-auto">
+//       <div className="flex flex-wrap -m-4">
 //         {/* create a new Array instance using Array() constructor and map through every element of array */}
 //         {Array(shimmer_card_unit)
 //           .fill("")
