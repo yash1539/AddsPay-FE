@@ -4,17 +4,17 @@ const ContactUs = () => {
   return (
     <div class="relative flex items-top justify-center min-h-screen  sm:items-center sm:pt-0">
       <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div class="mt-8 bg-white dark:bg-gray-900 overflow-hidden">
+        <div class="mt-8 bg-white overflow-hidden">
           <div class="grid pb-10 grid-cols-1 md:grid-cols-2">
-            <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
-              <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
+            <div class="p-6 mr-2 bg-gray-100  sm:rounded-lg">
+              <h1 class="text-4xl sm:text-5xl  font-extrabold tracking-tight">
                 Get in touch
               </h1>
-              <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
+              <p class="text-normal text-lg sm:text-2xl font-medium   mt-2">
                 Fill in the form to start a conversation
               </p>
 
-              <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+              <div class="flex items-center mt-8  ">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -43,7 +43,7 @@ const ContactUs = () => {
                 </div>
               </div>
 
-              <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+              <div class="flex items-center mt-4  ">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -65,7 +65,7 @@ const ContactUs = () => {
                 </div>
               </div>
 
-              <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+              <div class="flex items-center mt-2  ">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -86,7 +86,7 @@ const ContactUs = () => {
                   support@addspay.in
                 </div>
               </div>
-              <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+              <div class="flex items-center mt-2  ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -106,7 +106,7 @@ const ContactUs = () => {
                   www.addspay.in
                 </div>
               </div>
-              <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+              <div class="flex items-center mt-2  ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -140,7 +140,7 @@ const ContactUs = () => {
                   name="name"
                   id="name"
                   placeholder="Full Name"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700  font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>
 
@@ -153,7 +153,7 @@ const ContactUs = () => {
                   name="email"
                   id="email"
                   placeholder="Email"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700  font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>
 
@@ -166,7 +166,7 @@ const ContactUs = () => {
                   name="tel"
                   id="tel"
                   placeholder="Phone Number"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700  font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>
               <div class="flex flex-col">
@@ -178,7 +178,7 @@ const ContactUs = () => {
                   name="subject"
                   id="subject"
                   placeholder="Subject"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700  font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>
               <div class="flex flex-col">
@@ -190,7 +190,7 @@ const ContactUs = () => {
                   name="description"
                   id="description"
                   placeholder="Description"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700  font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>
               <button

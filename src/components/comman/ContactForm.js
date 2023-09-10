@@ -6,7 +6,7 @@ const ContactForm = () => {
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
       <div class="mt-8 overflow-hidden">
         <div class="grid pb-10 grid-cols-1 md:grid-cols-2">
-          <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+          <div class="p-6 mr-2 bg-gray-100  sm:rounded-lg">
             <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
               Get in touch
             </h1>
@@ -118,7 +118,7 @@ const ContactForm = () => {
                 name="name"
                 id="name"
                 placeholder="Full Name"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
 
@@ -131,7 +131,7 @@ const ContactForm = () => {
                 name="email"
                 id="email"
                 placeholder="Email"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
 
@@ -144,7 +144,7 @@ const ContactForm = () => {
                 name="tel"
                 id="tel"
                 placeholder="Phone Number"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
             <div class="flex flex-col">
@@ -156,7 +156,7 @@ const ContactForm = () => {
                 name="subject"
                 id="subject"
                 placeholder="Subject"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
             <div class="flex flex-col">
@@ -168,7 +168,7 @@ const ContactForm = () => {
                 name="description"
                 id="description"
                 placeholder="Description"
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
             </div>
             <button

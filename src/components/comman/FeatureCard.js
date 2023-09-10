@@ -3,7 +3,7 @@ import React from 'react'
 const FeatureCard = () => {
   return (
    <>
-   <section class="flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+   <section class="flex items-center justify-center bg-gray-100 ">
         <div class="px-4 py-20 mx-auto max-w-7xl">
             <div class="max-w-xl mx-auto">
                 <h1 class="mb-4 text-3xl font-bold text-center dark:text-white"> Our Features </h1>
