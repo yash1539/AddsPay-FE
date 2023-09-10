@@ -13,6 +13,8 @@ import Home from './components/pages/Home';
 import PricingPlan from './components/pages/PricingPlan';
 import ContactForm from './components/comman/ContactForm';
 import App from './App';
+import ListingForm from './components/adminlayout/listingform/ListingForm';
+import BussinessDetail from './components/adminlayout/listingform/BussinessDetail';
 const appRouter = createBrowserRouter([
   {
     path: "/", 
@@ -45,6 +47,14 @@ const appRouter = createBrowserRouter([
         path: "listing",
         element: <ListingPage />,
       },
+      {
+        path: "bussinessDetail",
+        element: <BussinessDetail />,
+      },
+      {
+        path: "listing-form",
+        element: <ListingForm />,
+      },
     ],
   },
   {
@@ -60,6 +70,11 @@ const appRouter = createBrowserRouter([
   {
     path: "contact-form",
     element: <ContactForm />,
+  },
+
+  {
+    path: "BussinessDetail",
+    element: <BussinessDetail />,
   },
   {
     path: "login",

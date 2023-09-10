@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import CategoryCard from "../comman/CategoryCard";
 import category from "../../utils/category.json";
 const CategorySection = () => {
-  console.log(category);
   const [catList]=useState(category)
   return (
     <>
       <div className=" py-20 sm:py-28">
-        <div className="bg-slate-50 mx-auto rounded-sm shadow-2xl bg-white py-20 max-w-5xl  px-4 lg:px-6">
+        <div className=" mx-auto rounded-sm shadow-2xl bg-white py-20 max-w-5xl  px-4 lg:px-6">
           <div className="mx-auto    lg:mx-0">
        
             <h2 className="text-3xl  font-bold text-center tracking-tight text-gray-900 sm:text-4xl">
@@ -26,7 +25,7 @@ const CategorySection = () => {
               .reverse()
               .splice(0, 9)
               .map((cat) => {
-                return <CategoryCard key={cat.name} {...cat} />;
+                return <CategoryCard key={cat.img} {...cat} />;
               })}
           </div>
           {/* )} */}
