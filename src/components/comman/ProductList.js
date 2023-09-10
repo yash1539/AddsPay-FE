@@ -3,7 +3,7 @@ import ProductCard from './ProductCard'
 
 const ProductList = () => {
   return (
-    <section className="flex  flex-col items-center my-20 bg-white lg:h-screen dark:bg-gray-800">
+    <section className="flex  flex-col items-center my-20 bg-white lg:h-screen ">
     <div className="mx-auto    lg:mx-0">
        
        <h2 className="text-3xl  font-bold text-center tracking-tight text-gray-900 sm:text-4xl">

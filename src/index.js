@@ -47,6 +47,14 @@ const appRouter = createBrowserRouter([
         path: "listing",
         element: <ListingPage />,
       },
+      {
+        path: "bussinessDetail",
+        element: <BussinessDetail />,
+      },
+      {
+        path: "listing-form",
+        element: <ListingForm />,
+      },
     ],
   },
   {
@@ -63,14 +71,8 @@ const appRouter = createBrowserRouter([
     path: "contact-form",
     element: <ContactForm />,
   },
-  {
-    path: "listing-form",
-    element: <ListingForm />,
-  },
-  {
-    path: "bussinessDetail",
-    element: <BussinessDetail />,
-  },
+
+ 
   {
     path: "login",
     element: <Login />,
