@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { storage } from '../../../firebase.js'; // Import your Firebase configuration
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; // Import Firebase Storage functions
-
+import { storage } from "../../../firebase";
 const ListingForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({

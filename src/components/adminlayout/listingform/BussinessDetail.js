@@ -1,11 +1,11 @@
 import React from "react";
 
-const Card = ({ title, width }) => (
-  <div className={`bg-gray-300 p-4 ${width}`}>
-    <h2 className="text-lg font-semibold">{title}</h2>
-    {/* Add content for each card */}
-  </div>
-);
+// const Card = ({ title, width }) => (
+//   <div className={`bg-gray-300 p-4 ${width}`}>
+//     <h2 className="text-lg font-semibold">{title}</h2>
+//     {/* Add content for each card */}
+//   </div>
+// );
 
 const BussinessDetail = () => {
   return (
@@ -57,13 +57,13 @@ const BussinessDetail = () => {
               <div className="w-16 mb-3 border-b-2 border-blue-500 dark:border-gray-400 inset-px"></div>
               {/* <div className="flex flex-wrap gap-2 my-4 font-poppins ">
                         <a className="px-4 py-1 mb-2 text-xs text-black transition bg-gray-300 rounded btn btn-sm hover:bg-blue-500 dark:text-gray-100 dark:bg-gray-600 dark:hover:bg-gray-900 hover:text-white"
-                            href="#">
+                            href="/#">
                             Corporate</a>
                         <a className="px-4 py-1 mb-2 text-xs text-black transition bg-gray-300 rounded btn btn-sm hover:bg-blue-500 hover:text-white dark:text-gray-100 dark:bg-gray-600 dark:hover:bg-gray-900"
-                            href="#">
+                            href="/#">
                             Business</a>
                         <a className="px-4 py-1 mb-2 text-xs text-black transition bg-gray-300 rounded btn btn-sm hover:bg-blue-500 hover:text-white dark:text-gray-100 dark:bg-gray-600 dark:hover:bg-gray-900"
-                            href="#">
+                            href="/#">
                             Field</a>
                     </div> */}
               <div class="grid grid-cols-1 gap-4 lg:gap-4 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -76,7 +76,7 @@ const BussinessDetail = () => {
                         alt=""
                       />
                       <div class="absolute flex flex-col top-4 right-4">
-                        <a href="#" class="flex items-center">
+                        <a href="/#" class="flex items-center">
                           <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded dark:bg-gray-700 dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ const BussinessDetail = () => {
                             </svg>
                           </div>
                         </a>
-                        <a href="#" class="flex items-center">
+                        <a href="/#" class="flex items-center">
                           <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded dark:bg-gray-700 dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ const BussinessDetail = () => {
                         </a>
                       </div>
                     </div>
-                    <a href="#">
+                    <a href="/#">
                       <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
                         1800X Zoom Level Nikon Lense
                       </h2>
@@ -281,7 +281,7 @@ const BussinessDetail = () => {
                 <ul className="flex flex-wrap ">
                   <li className="w-1/2 h-32 p-1 social-box">
                     <a
-                      href="#"
+                      href="/#"
                       className="flex flex-col items-center justify-center w-full h-full text-white transition-transform duration-200 ease-in transform bg-blue-800 bg-silver-darker rd-br-full rd-tl-full hover:scale-105"
                     >
                       <svg
