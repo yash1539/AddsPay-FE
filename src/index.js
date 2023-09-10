@@ -72,7 +72,10 @@ const appRouter = createBrowserRouter([
     element: <ContactForm />,
   },
 
- 
+  {
+    path: "BussinessDetail",
+    element: <BussinessDetail />,
+  },
   {
     path: "login",
     element: <Login />,

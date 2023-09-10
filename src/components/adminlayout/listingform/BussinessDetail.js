@@ -1,12 +1,12 @@
 import React from "react";
 import ContactUs from "../../pages/ContactUs";
 
-const Card = ({ title, width }) => (
-  <div className={`bg-gray-300 p-4 ${width}`}>
-    <h2 className="text-lg font-semibold">{title}</h2>
-    {/* Add content for each card */}
-  </div>
-);
+// const Card = ({ title, width }) => (
+//   <div className={`bg-gray-300 p-4 ${width}`}>
+//     <h2 className="text-lg font-semibold">{title}</h2>
+//     {/* Add content for each card */}
+//   </div>
+// );
 
 const BussinessDetail = () => {
   return (
@@ -17,7 +17,7 @@ const BussinessDetail = () => {
             <div class="col-span-4 sm:col-span-3">
               <div class="bg-white shadow rounded-lg p-6">
                 <div class="flex flex-col items-center">
-                  <img
+                  <img alt=""
                     src="https://randomuser.me/api/portraits/men/94.jpg"
                     class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
                   ></img>
@@ -25,12 +25,12 @@ const BussinessDetail = () => {
                   <p class="text-gray-600">Bussiness type </p>
                   <div class="mt-6 flex flex-wrap gap-4 justify-center">
                     <a
-                      href="#"
+                      href="/#"
                       class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
                     >
                       Contact
                     </a>
-                    {/* <a href="#" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a> */}
+                    {/* <a href="/#" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a> */}
                   </div>
                 </div>
                 <hr class="my-6 border-t border-gray-300" />
@@ -63,10 +63,10 @@ const BussinessDetail = () => {
 
                 <h3 class="font-semibold text-center mt-3 -mb-2">Find me on</h3>
                 <div class="flex justify-center items-center gap-6 my-6">
-                  <a
+                  <a 
                     class="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds LinkedIn"
-                    href=""
+                    href="/#"
                     target="_blank"
                   >
                     <svg
@@ -83,7 +83,7 @@ const BussinessDetail = () => {
                   <a
                     class="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds YouTube"
-                    href=""
+                    href="/#"
                     target="_blank"
                   >
                     <svg
@@ -100,7 +100,7 @@ const BussinessDetail = () => {
                   <a
                     class="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds Facebook"
-                    href=""
+                    href="/#"
                     target="_blank"
                   >
                     <svg
@@ -117,7 +117,7 @@ const BussinessDetail = () => {
                   <a
                     class="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds Instagram"
-                    href=""
+                    href="/#"
                     target="_blank"
                   >
                     <svg
@@ -134,7 +134,7 @@ const BussinessDetail = () => {
                   <a
                     class="text-gray-700 hover:text-orange-600"
                     aria-label="Visit TrendyMinds Twitter"
-                    href=""
+                    href="/#"
                     target="_blank"
                   >
                     <svg
@@ -163,7 +163,7 @@ const BussinessDetail = () => {
                               alt=""
                             />
                             <div class="absolute flex flex-col top-4 right-4">
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@ const BussinessDetail = () => {
                                   </svg>
                                 </div>
                               </a>
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +193,7 @@ const BussinessDetail = () => {
                               </a>
                             </div>
                           </div>
-                          <a href="#">
+                          <a href="/#">
                             <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
@@ -267,7 +267,7 @@ const BussinessDetail = () => {
                               alt=""
                             />
                             <div class="absolute flex flex-col top-4 right-4">
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +281,7 @@ const BussinessDetail = () => {
                                   </svg>
                                 </div>
                               </a>
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@ const BussinessDetail = () => {
                               </a>
                             </div>
                           </div>
-                          <a href="#">
+                          <a href="/#">
                             <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
@@ -371,7 +371,7 @@ const BussinessDetail = () => {
                               alt=""
                             />
                             <div class="absolute flex flex-col top-4 right-4">
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -385,7 +385,7 @@ const BussinessDetail = () => {
                                   </svg>
                                 </div>
                               </a>
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -401,7 +401,7 @@ const BussinessDetail = () => {
                               </a>
                             </div>
                           </div>
-                          <a href="#">
+                          <a href="/#">
                             <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
@@ -475,7 +475,7 @@ const BussinessDetail = () => {
                               alt=""
                             />
                             <div class="absolute flex flex-col top-4 right-4">
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -489,7 +489,7 @@ const BussinessDetail = () => {
                                   </svg>
                                 </div>
                               </a>
-                              <a href="#" class="flex items-center">
+                              <a href="/#" class="flex items-center">
                                 <div class="relative flex items-center justify-center p-3 mb-3 transition-all translate-x-20 bg-white rounded  dark:text-white group-hover:translate-x-0 wishlist hover:bg-blue-200 dark:hover:bg-blue-600 group">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -505,7 +505,7 @@ const BussinessDetail = () => {
                               </a>
                             </div>
                           </div>
-                          <a href="#">
+                          <a href="/#">
                             <h2 class="mb-2 text-xl font-bold text-black dark:text-white">
                               1800X Zoom Level Nikon Lense
                             </h2>
@@ -573,13 +573,12 @@ const BussinessDetail = () => {
                     </div>
                   </div>
                 </section>
-              <ContactUs />
+                <ContactUs />
               </div>
             </div>
           </div>
         </div>
       </div>
-      
     </>
   );
 };
