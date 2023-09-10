@@ -1,123 +1,66 @@
-// Import Firebase Firestore and initialize it (assuming you've already set up Firebase)
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth'; // Import Firebase Authentication
+import {
+  getFirestore,
+  collection,
+  doc,
+  deleteDoc,
+  setDoc,
+  addDoc,
+} from "firebase/firestore";
 
-// Initialize Firestore and Authentication
-const db = firebase.firestore();
-const auth = firebase.auth();
+const db = getFirestore();
 
-// Function to retrieve products created by a specific user
-const getProductsByUser = async (userId) => {
-  try {
-    // Check if the user is authenticated
-    const user = auth.currentUser;
-
-    if (user) {
-      // User is authenticated, so we can proceed with the query
-      const productsRef = db.collection('products');
-
-      // Use a query to filter products by the 'createdBy' field
-      const query = productsRef.where('createdBy', '==', userId);
-
-      // Execute the query and get the matching products
-      const snapshot = await query.get();
-
-      // Process the retrieved products
-      snapshot.forEach((doc) => {
-        console.log('Product ID: ', doc.id);
-        console.log('Product Data: ', doc.data());
-      });
-    } else {
-      // User is not authenticated, handle accordingly (e.g., show an error or prompt to log in).
-      console.log('User is not authenticated.');
-    }
-  } catch (error) {
-    console.error('Error getting products: ', error);
-  }
+// Dummy product data
+const newProduct = {
+  productName: "Example Product",
+  productDescription: "This is an example product.",
+  productCategory: "Electronics",
+  productPrice: 299.99,
 };
 
-// Replace 'userIdToQuery' with the user's actual ID
-const userIdToQuery = 'your-user-id-here';
-
-// Call the function to retrieve products by the specified user
-getProductsByUser(userIdToQuery);
-
-
-// Define a function to add a new product document with the user's ID
+// Function to add a new product to Firestore
 const addProduct = async (productData) => {
   try {
-    // Check if a user is currently authenticated
-    const user = auth.currentUser;
-
-    if (user) {
-      // User is authenticated, so we can access their UID
-      productData['createdBy'] = user.uid;
-
-      // Product data including the user's ID
-
-
-      // Add the product document to the 'products' collection
-      const productRef = await db.collection('products').add(productData);
-
-      console.log('Product added with ID: ', productRef.id);
-    } else {
-      // User is not authenticated, handle accordingly (e.g., show an error or prompt to log in).
-      console.log('User is not authenticated.');
-    }
+    const docRef = await addDoc(collection(db, "products"), productData);
+    console.log("Product added with ID: ", docRef.id);
   } catch (error) {
-    console.error('Error adding product: ', error);
+    console.error("Error adding product: ", error);
   }
 };
-const productData = {
-    name: 'Smartphone X',
-    description: 'A high-end smartphone with advanced features.',
-    price: 699.99,
-    imageURL: 'https://example.com/smartphone_x.jpg',
-    category: 'Electronics', // Reference to the 'categories' collection
-    stock: 100,
-    ratings: [
-      { rating: 5, review: 'Excellent phone!' },
-      { rating: 4, review: 'Great camera quality.' },
-    ],
-    specifications: {
-      display: '6.2-inch OLED',
-      processor: 'Octa-core Snapdragon 888',
-      storage: '128GB',
-      camera: 'Triple 48MP + 12MP + 8MP',
-    },
-   // createdBy: "userId", // Add the user's ID as a field
-  };
-// Call the function to add a product
-addProduct(productData);
 
+const updatedProduct = {
+  productName: "Updated Product Name",
+  productDescription: "This is an updated product description.",
+  productCategory: "Electronics",
+  productPrice: 349.99,
+};
 
-
-
-// Function to update product details
-const updateProduct = async (productId, updatedProductData) => {
+// Function to update a product in Firestore
+const updateProduct = async (productId, updatedData) => {
   try {
-    // Reference to the specific product document using the provided product ID
-    const productRef = db.collection('products').doc(productId);
-
-    // Use the .update() method to update the document with the new data
-    await productRef.update(updatedProductData);
-
-    console.log('Product updated successfully');
+    const productRef = doc(db, "products", productId);
+    await setDoc(productRef, updatedData, { merge: true });
+    console.log("Product updated successfully.");
   } catch (error) {
-    console.error('Error updating product: ', error);
+    console.error("Error updating product: ", error);
   }
 };
 
-// Example usage: Replace 'productID123' with the actual product ID and provide the updated data
-const productIdToUpdate = 'productID123';
-const updatedProductData = {
-  name: 'Updated Smartphone X',
-  price: 749.99,
-  description: 'An updated version of the smartphone with improved features.',
+// Function to delete a product from Firestore
+const deleteProduct = async (productId) => {
+  try {
+    const productRef = doc(db, "products", productId);
+    await deleteDoc(productRef);
+    console.log("Product deleted successfully.");
+  } catch (error) {
+    console.error("Error deleting product: ", error);
+  }
 };
 
-// Call the function to update the product
-updateProduct(productIdToUpdate, updatedProductData);
+// Replace 'existingProductId' with the actual product document ID
+deleteProduct("existingProductId");
 
+// Replace 'existingProductId' with the actual product document ID
+updateProduct("existingProductId", updatedProduct);
 
+// Call the function to add a new product
+addProduct(newProduct);

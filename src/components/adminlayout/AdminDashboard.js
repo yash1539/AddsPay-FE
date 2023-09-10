@@ -11,7 +11,7 @@ const AdminDashboard = () => {
             <div className="relative lg:block navbar-menu">
                 <nav 
                 // className="! open ? 'w-0' : 'w-[280px]'"
-                    className="w-[280px] fixed top-0 transition-all lg:mt-0 z-40 mt-16 left-0 dark:bg-gray-900 bottom-0 flex flex-col w-[280px] lg:border-none border-r border-gray-200 dark:border-gray-800 bg-gray-50 overflow-hidden "
+                    className="w-[280px] fixed top-0 transition-all lg:mt-0 z-40 mt-16 left-0 dark:bg-gray-900 bottom-0 flex flex-col  lg:border-none border-r border-gray-200 dark:border-gray-800 bg-gray-50 overflow-hidden "
                     id="sidenav">
                     <div className="flex items-center w-full px-4 pt-4 pb-4 border-b border-gray-200 dark:border-gray-700">
                         <a href="/#">
@@ -276,7 +276,7 @@ const AdminDashboard = () => {
                                         </button>
                                     </div>
                                     <div  id="dropdown_profile"
-                                        className="absolute right-0 w-48 mt-3 origin-top-right bg-white rounded shadow dark:bg-gray-800 dark:text-gray-100 dark:bg-gray-700"
+                                        className="absolute right-0 w-48 mt-3 origin-top-right bg-white rounded shadow dark:bg-gray-800 dark:text-gray-100"
                                        >
                                         <div className="py-1">
                                             <a href="/#"
@@ -579,7 +579,7 @@ const AdminDashboard = () => {
                                 Comments</h2>
                             <div className="flex flex-wrap mb-6">
                                 <div className="px-4 ">
-                                    <img className="object-cover w-20 h-20 p-2 rounded-full"
+                                    <img className="object-cover w-20 h-20 p-2 rounded-full" alt=''
                                         src="https://i.postimg.cc/RhQYkKYk/pexels-italo-melo-2379005.jpg"/>
                                 </div>
                                 <div className="flex-grow px-4">
@@ -626,7 +626,7 @@ const AdminDashboard = () => {
                             </div>
                             <div className="flex flex-wrap ">
                                 <div className="px-4 ">
-                                    <img className="object-cover w-20 h-20 p-2 rounded-full"
+                                    <img className="object-cover w-20 h-20 p-2 rounded-full" alt=''
                                         src="https://i.postimg.cc/RhQYkKYk/pexels-italo-melo-2379005.jpg"/>
                                 </div>
                                 <div className="flex-grow px-4">
