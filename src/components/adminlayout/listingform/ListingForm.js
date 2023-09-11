@@ -727,6 +727,10 @@ const ListingForm = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Review Your Information</h3>
             <div className="mb-4">
+              <strong>Logo:</strong>
+              <img src={formData.logo} alt="Logo" />
+            </div>
+            <div className="mb-4">
               <strong>Business Name:</strong> {formData.businessName}
             </div>
             <div className="mb-4">
@@ -735,10 +739,7 @@ const ListingForm = () => {
             <div className="mb-4">
               <strong>Phone Number:</strong> {formData.contact}
             </div>
-            <div className="mb-4">
-              <strong>Logo:</strong>
-              <img src={formData.logo} alt="Logo" />
-            </div>
+          
             <div className="mb-4">
               <strong>address:</strong> {formData.address}
             </div>
