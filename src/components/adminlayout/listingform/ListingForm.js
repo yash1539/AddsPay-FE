@@ -5,43 +5,44 @@ const ListingForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     businessName: "",
-    slug: "",
-    doubleInput1: "",
-    doubleInput2: "",
+    businessEmail: "",
+    logo: "",
+    thumbnail: "",
+    contact: "",
+    images: "",
+    description: "",
+    address: "",
   });
 
-  function uploadImage(file) {
-    const imageName = `listing-logo-${new Date().getTime()}`;
-    const storageRef = ref(storage, imageName);
-
-    uploadBytes(storageRef, file)
-      .then((snapshot) => {
-        getDownloadURL(snapshot.ref).then((downloadURL) => {
-          localStorage.setItem("listingLogoURL", downloadURL);
-          console.log(`Image URL: ${downloadURL}`);
+  function uploadImage(file, type) {
+    if (type === "logo") {
+      const imageName = `listing-${formData.businessName}-logo-${new Date().getTime()}`;
+      const storageRef = ref(storage, imageName);
+      uploadBytes(storageRef, file)
+        .then((snapshot) => {
+          getDownloadURL(snapshot.ref).then((downloadURL) => {
+            localStorage.setItem("listingLogoURL", downloadURL);
+            setFormData({ ...formData, logo: downloadURL })
+            console.log(`Image URL: ${downloadURL}`);
+          });
+        })
+        .catch((error) => {
+          console.error("Error uploading image: ", error);
         });
-      })
-      .catch((error) => {
-        console.error("Error uploading image: ", error);
-      });
+    }
   }
 
   const handleNextStep = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-
-    if (step === 1) {
-      // Validation htmlFor the first step can be added here
-      // if (!formData.businessName || !formData.slug) {
-      //   alert("Business name and slug are required.");
-      //   return;
-      // }
+    e.preventDefault();
+    if (step < 5) {
+      setStep(step + 1);
     }
-
-    setStep(step + 1); // Advance to the next step
   };
 
   const handlePreviousStep = () => {
-    setStep(step - 1);
+    if (step > 1) {
+      setStep(step - 1);
+    }
   };
 
   const handleInputChange = (e) => {
@@ -64,6 +65,7 @@ const ListingForm = () => {
                 id="floating_email"
                 className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
+                onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
               />
               <label
                 htmlFor="floating_email"
@@ -79,6 +81,7 @@ const ListingForm = () => {
                 id="floating_password"
                 className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
+                onChange={(e) => setFormData({ ...formData, businessEmail: e.target.value })}
               />
               <label
                 htmlFor="floating_password"
@@ -94,6 +97,7 @@ const ListingForm = () => {
                 id="floating_repeat_password"
                 className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
+                onChange={(e) => setFormData({ ...formData, address: e.target.value })}
               />
               <label
                 htmlFor="floating_repeat_password"
@@ -177,11 +181,12 @@ const ListingForm = () => {
               <div className="relative z-0 w-full mb-6 group">
                 <input
                   type="tel"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  pattern="[0-9]{10}"
                   name="floating_phone"
                   id="floating_phone"
                   className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
+                  onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
                 />
                 <label
                   htmlFor="floating_phone"
@@ -308,21 +313,6 @@ const ListingForm = () => {
                   Youtube
                 </label>
               </div>
-              {/* <div className="relative z-0 w-full mb-6 group">
-              <input
-                type="text"
-                name="floating_company"
-                id="floating_company"
-                className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder=" "
-              />
-              <label
-                htmlFor="floating_company"
-                className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-              >
-                Instagram Link
-              </label>
-            </div> */}
             </div>
           </div>
         );
@@ -338,7 +328,7 @@ const ListingForm = () => {
                   id="floating_company"
                   className="block py-2.5 px-0 w-full text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
-                  onChange={(e) => uploadImage(e.target.files[0])}
+                  onChange={(e) => uploadImage(e.target.files[0], "logo")}
                 />
                 <label
                   htmlFor="floating_phone"
@@ -400,6 +390,7 @@ const ListingForm = () => {
                 id="floating_email"
                 className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
+                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
               />
               <label
                 htmlFor="floating_email"
@@ -478,6 +469,7 @@ const ListingForm = () => {
             </div>
           </div>
         );
+      // eslint-disable-next-line no-duplicate-case
       case 4:
         return (
           <div>
@@ -727,25 +719,34 @@ const ListingForm = () => {
                   Youtube
                 </label>
               </div>
-              {/* <div className="relative z-0 w-full mb-6 group">
-              <input
-                type="text"
-                name="floating_company"
-                id="floating_company"
-                className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder=" "
-              />
-              <label
-                htmlFor="floating_company"
-                className="peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-              >
-                Instagram Link
-              </label>
-            </div> */}
             </div>
           </div>
         );
-
+      case 5:
+        return (
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Review Your Information</h3>
+            <div className="mb-4">
+              <strong>Business Name:</strong> {formData.businessName}
+            </div>
+            <div className="mb-4">
+              <strong>Business Email:</strong> {formData.businessEmail}
+            </div>
+            <div className="mb-4">
+              <strong>Phone Number:</strong> {formData.contact}
+            </div>
+            <div className="mb-4">
+              <strong>Logo:</strong>
+              <img src={formData.logo} alt="Logo" />
+            </div>
+            <div className="mb-4">
+              <strong>address:</strong> {formData.address}
+            </div>
+            <div className="mb-4">
+              <strong>Description:</strong> {formData.description}
+            </div>
+          </div>
+        );
       default:
         return null;
     }
@@ -761,7 +762,8 @@ const ListingForm = () => {
         <div className="mt-4 flex justify-between">
           {step > 1 && (
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+              className="bg-blue-500 hover.bg-blue-600 text-white py-2 px-4 rounded"
+              type="button"
               onClick={handlePreviousStep}
             >
               Previous
@@ -769,15 +771,16 @@ const ListingForm = () => {
           )}
           {step < 5 && (
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
-              type="submit" // Use type="submit" to trigger form submission
+              className="bg-blue-500 hover.bg-blue-600 text-white py-2 px-4 rounded"
+              type="button"
+              onClick={handleNextStep}
             >
               Next
             </button>
           )}
           {step === 5 && (
             <button
-              className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
+              className="bg-green-500 hover.bg-green-600 text-white py-2 px-4 rounded"
               onClick={() => {
                 // Handle form submission and data distribution here
                 console.log("Form data:", formData);
