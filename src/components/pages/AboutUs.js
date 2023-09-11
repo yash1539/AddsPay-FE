@@ -4,7 +4,7 @@ import FeatureCard from '../comman/FeatureCard'
 const AboutUs = () => {
   return (
     <>
-      <div className="bg-gray-100 p-6 flex flex-col items-center justify-center h-screen bg-red-50">
+      <div className="bg-gray-100 p-6 flex flex-col items-center justify-center h-screen ">
      <section className="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
         <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
             <div className="flex flex-wrap ">

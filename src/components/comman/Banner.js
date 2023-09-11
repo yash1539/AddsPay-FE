@@ -2,7 +2,7 @@ import React from 'react'
 function Banner() {
 const imageUrl= "https://i.postimg.cc/P5gCz1Wc/pexels-marc-mueller-380769.jpg"
     return (
-    <div className="object-cover w-full bg-center bg-cover h-[35rem] "
+    <div className="object-cover w-3/4 mx-auto bg-center bg-cover h-[20rem] "
     style= {{backgroundImage:`url(${imageUrl})`}}>
     <div className="flex items-center justify-center w-full h-full bg-blue-800 bg-opacity-50 ">
         <div className="flex justify-between w-full mx-10 ">

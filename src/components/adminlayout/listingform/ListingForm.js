@@ -66,6 +66,7 @@ const ListingForm = () => {
                 className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
+                value={formData.businessName}
               />
               <label
                 htmlFor="floating_email"
@@ -82,6 +83,7 @@ const ListingForm = () => {
                 className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 onChange={(e) => setFormData({ ...formData, businessEmail: e.target.value })}
+                value={formData.businessEmail}
               />
               <label
                 htmlFor="floating_password"
@@ -98,6 +100,7 @@ const ListingForm = () => {
                 className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                value={formData.address}
               />
               <label
                 htmlFor="floating_repeat_password"
@@ -187,6 +190,7 @@ const ListingForm = () => {
                   className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
+                  value={formData.contact}
                 />
                 <label
                   htmlFor="floating_phone"
@@ -329,6 +333,7 @@ const ListingForm = () => {
                   className="block py-2.5 px-0 w-full text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   onChange={(e) => uploadImage(e.target.files[0], "logo")}
+                  // value={formData.logo}
                 />
                 <label
                   htmlFor="floating_phone"
@@ -344,6 +349,8 @@ const ListingForm = () => {
                   id="floating_company"
                   className="block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
+                  onChange={(e) => uploadImage(e.target.files[0], "Banner")}
+                  value={formData.thumbnail}
                 />
                 <label
                   htmlFor="floating_company"
@@ -727,8 +734,7 @@ const ListingForm = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Review Your Information</h3>
             <div className="mb-4">
-              <strong>Logo:</strong>
-              <img src={formData.logo} alt="Logo" />
+              <img src={formData.logo} alt="Logo"     style={{ width: "100px", height: "100px", float: "left" }}/>
             </div>
             <div className="mb-4">
               <strong>Business Name:</strong> {formData.businessName}

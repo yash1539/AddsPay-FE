@@ -1,19 +1,20 @@
 import React from "react";
 import BussinessDetail from "../adminlayout/listingform/BussinessDetail";
+import { Link } from "react-router-dom";
 
 const ListingCard = () => {
   return (
     <>
-      <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3" onClick={BussinessDetail}>
+      <div className="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
         <div className="border border-gray-300 ">
           <div className="relative bg-gray-200">
-            <a href="/#" className="">
+            <Link to="/BussinessDetail" className="">
               <img
                 src="https://i.postimg.cc/pdcRLwSq/pexels-igor-ovsyannykov-205961.jpg"
                 alt=""
                 className="object-cover w-full h-56 mx-auto "
               />
-            </a>
+            </Link>
           </div>
           <div className="p-3 ">
             <div className="flex items-center justify-between mb-2">
@@ -26,7 +27,7 @@ const ListingCard = () => {
             </p>
             <div className="flex flex-wrap justify-between">
 
-            <button className="h-10 m-3 text-white rounded w-20   top-0 right-0  bg-red-600" onClick={BussinessDetail}>
+            <button className="h-10 m-3 text-white rounded w-20   top-0 right-0  bg-red-600">
                Featured
            </button>
             <button className="h-10 m-3 text-white rounded w-20   top-0 right-0  bg-blue-600">

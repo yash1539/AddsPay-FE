@@ -121,7 +121,7 @@ const Navbar = ({ user }) => {
                 to="/login"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
-                Log ddin <span aria-hidden="true">&rarr;</span>
+                Log In <span aria-hidden="true">&rarr;</span>
               </Link>
             ) : (
               <Popover className="relative">
